@@ -1,0 +1,546 @@
+Date/Time:       2024-11-21 12:03:22 
+Command line:    /home/codespace/.python/current/bin/briefcase dev
+
+OS Release:      Linux 6.5.0-1025-azure
+OS Version:      #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024
+Architecture:    x86_64
+Platform:        Linux-6.5.0-1025-azure-x86_64-with-glibc2.31
+
+Python exe:      /usr/local/python/3.12.1/bin/python3
+Python version:  3.12.1 (main, Sep 30 2024, 17:05:21) [GCC 9.4.0]
+Virtual env:     False
+Conda env:       False
+
+Briefcase:       0.3.20
+Target platform: linux
+Target format:   None
+
+Environment Variables:
+	BROWSER=/vscode/bin/linux-x64/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/bin/helpers/browser.sh
+	CLOUDENV_ENVIRONMENT_ID=46069b5a-28be-4fdc-92f4-02d1262601a8
+	CODESPACES=true
+	CODESPACE_NAME=bug-free-orbit-69vqqrqwpq75f455p
+	CODESPACE_VSCODE_FOLDER=/workspaces/tflstuff
+	COLORTERM=truecolor
+	CONDA_DIR=/opt/conda
+	CONDA_SCRIPT=/opt/conda/etc/profile.d/conda.sh
+	ContainerVersion=13
+	DEBIAN_FLAVOR=focal-scm
+	DOCKER_BUILDKIT=1
+	DOTNET_ROOT=/usr/share/dotnet
+	DOTNET_RUNNING_IN_CONTAINER=true
+	DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+	DOTNET_USE_POLLING_FILE_WATCHER=true
+	DYNAMIC_INSTALL_ROOT_DIR=/opt
+	ENABLE_DYNAMIC_INSTALL=true
+	GEM_HOME=/usr/local/rvm/gems/ruby-3.3.4
+	GEM_PATH=/usr/local/rvm/gems/ruby-3.3.4:/usr/local/rvm/gems/ruby-3.3.4@global
+	GITHUB_API_URL=********************
+	GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN=app.github.dev
+	GITHUB_CODESPACE_TOKEN=********************
+	GITHUB_GRAPHQL_URL=https://api.github.com/graphql
+	GITHUB_REPOSITORY=pendrixfan01/tflstuff
+	GITHUB_SERVER_URL=https://github.com
+	GITHUB_TOKEN=********************
+	GITHUB_USER=pendrixfan01
+	GIT_ASKPASS=********************
+	GIT_EDITOR=code --wait
+	GOPATH=/go
+	GOROOT=/usr/local/go
+	GRADLE_HOME=/usr/local/sdkman/candidates/gradle/current
+	HOME=/home/codespace
+	HOSTNAME=codespaces-a9b1e0
+	HUGO_DIR=/usr/local/hugo/bin
+	HUGO_ROOT=/home/codespace/.hugo
+	INTERNAL_VSCS_TARGET_URL=https://uksouth.online.visualstudio.com
+	IRBRC=/usr/local/rvm/rubies/ruby-3.3.4/.irbrc
+	JAVA_HOME=/usr/local/sdkman/candidates/java/current
+	JAVA_ROOT=/home/codespace/java
+	JUPYTERLAB_PATH=/home/codespace/.local/bin
+	LANG=C.UTF-8
+	LESSCLOSE=/usr/bin/lesspipe %s %s
+	LESSOPEN=| /usr/bin/lesspipe %s
+	LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+	MAVEN_HOME=/usr/local/sdkman/candidates/maven/current
+	MAVEN_ROOT=/home/codespace/.maven
+	MY_RUBY_HOME=/usr/local/rvm/rubies/ruby-3.3.4
+	NODE_ROOT=/home/codespace/nvm
+	NPM_GLOBAL=/home/codespace/.npm-global
+	NUGET_XMLDOC_MODE=skip
+	NVM_BIN=/usr/local/share/nvm/versions/node/v20.17.0/bin
+	NVM_CD_FLAGS=
+	NVM_DIR=/usr/local/share/nvm
+	NVM_INC=/usr/local/share/nvm/versions/node/v20.17.0/include/node
+	NVM_SYMLINK_CURRENT=true
+	NVS_DIR=/usr/local/nvs
+	NVS_HOME=/usr/local/nvs
+	NVS_OS=linux
+	NVS_ROOT=/usr/local/nvs
+	NVS_USE_XZ=1
+	OLDPWD=/workspaces/tflstuff
+	ORYX_DIR=/usr/local/oryx
+	ORYX_ENV_TYPE=vsonline-present
+	ORYX_PREFER_USER_INSTALLED_SDKS=true
+	ORYX_SDK_STORAGE_BASE_URL=https://oryx-cdn.microsoft.io
+	PATH=/usr/local/rvm/gems/ruby-3.3.4/bin:/usr/local/rvm/gems/ruby-3.3.4@global/bin:/usr/local/rvm/rubies/ruby-3.3.4/bin:/vscode/bin/linux-x64/f1a4fb101478ce6ec82fe9627c43efbf9e98c813/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/versions/node/v20.17.0/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin
+	PHP_PATH=/usr/local/php/current
+	PHP_ROOT=/home/codespace/.php
+	PIPX_BIN_DIR=/usr/local/py-utils/bin
+	PIPX_HOME=/usr/local/py-utils
+	PROMPT_DIRTRIM=4
+	PWD=/workspaces/tflstuff/tflApp
+	PYTHONIOENCODING=UTF-8
+	PYTHON_PATH=/usr/local/python/current
+	PYTHON_ROOT=/home/codespace/.python
+	RAILS_DEVELOPMENT_HOSTS=.githubpreview.dev,.preview.app.github.dev,.app.github.dev
+	RUBY_HOME=/usr/local/rvm/rubies/default
+	RUBY_ROOT=/home/codespace/.ruby
+	RUBY_VERSION=ruby-3.3.4
+	RVM_PATH=/usr/local/rvm
+	SDKMAN_CANDIDATES_API=********************
+	SDKMAN_CANDIDATES_DIR=/usr/local/sdkman/candidates
+	SDKMAN_DIR=/usr/local/sdkman
+	SDKMAN_PLATFORM=linuxx64
+	SHELL=/bin/bash
+	SHELL_LOGGED_IN=true
+	SHLVL=2
+	TERM=xterm-256color
+	TERM_PROGRAM=vscode
+	TERM_PROGRAM_VERSION=1.95.3
+	USER=codespace
+	VSCODE_GIT_ASKPASS_EXTRA_ARGS=********************
+	VSCODE_GIT_ASKPASS_MAIN=********************
+	VSCODE_GIT_ASKPASS_NODE=********************
+	VSCODE_GIT_IPC_HANDLE=/tmp/vscode-git-217529a35c.sock
+	VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-94073b00-0f41-44aa-9513-553354ab6a97.sock
+	_=/home/codespace/.python/current/bin/briefcase
+	rvm_bin_path=/usr/local/rvm/bin
+	rvm_path=/usr/local/rvm
+	rvm_prefix=/usr/local
+	rvm_version=1.29.12 (latest)
+
+pyproject.toml:
+# This project was generated with 0.3.20 using template: https://github.com/beeware/briefcase-template@v0.3.20
+[tool.briefcase]
+project_name = "London Travel App"
+bundle = "com.tflnea"
+version = "0.0.1"
+url = "https://tflnea.com/tflApp"
+license.file = "LICENSE"
+author = "Paul Rayner"
+author_email = "txcxxtxcxx@gmail.com"
+
+[tool.briefcase.app.tflApp]
+formal_name = "London Travel App"
+description = "My first application"
+long_description = """More details about the app should go here.
+"""
+sources = [
+    "src/tflApp",
+]
+test_sources = [
+    "tests",
+]
+
+requires = [
+]
+test_requires = [
+    "pytest",
+]
+
+[tool.briefcase.app.tflApp.macOS]
+universal_build = true
+requires = [
+    "toga-cocoa~=0.4.7",
+    "std-nslog~=1.0.3",
+]
+
+[tool.briefcase.app.tflApp.linux]
+requires = [
+    "toga-gtk~=0.4.7",
+]
+
+[tool.briefcase.app.tflApp.linux.system.debian]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "libcairo2-dev",
+    # Needed to compile PyGObject wheel
+    "libgirepository1.0-dev",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK and its GI bindings
+    "gir1.2-gtk-3.0",
+    "libgirepository-1.0-1",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3-module",
+    # Needed to provide WebKit2 at runtime
+    # Note: Debian 11 and Ubuntu 20.04 require gir1.2-webkit2-4.0 instead
+    # "gir1.2-webkit2-4.1",
+]
+
+[tool.briefcase.app.tflApp.linux.system.rhel]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-gobject-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+]
+
+system_runtime_requires = [
+    # Needed to support Python bindings to GTK
+    "gobject-introspection",
+    # Needed to provide GTK
+    "gtk3",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3",
+    # Needed to provide WebKit2 at runtime
+    # "webkit2gtk3",
+]
+
+[tool.briefcase.app.tflApp.linux.system.suse]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK
+    "gtk3",
+    # Needed to support Python bindings to GTK
+    "gobject-introspection", "typelib(Gtk) = 3.0",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra-gtk3-module",
+    # Needed to provide WebKit2 at runtime
+    # "libwebkit2gtk3", "typelib(WebKit2)",
+]
+
+[tool.briefcase.app.tflApp.linux.system.arch]
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection",
+    # Runtime dependencies that need to exist so that the
+    # Arch package passes final validation.
+    # Needed to provide GTK
+    "gtk3",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra",
+    # Needed to provide WebKit2
+    # "webkit2gtk",
+]
+
+system_runtime_requires = [
+    # Needed to provide GTK
+    "gtk3",
+    # Needed to provide PyGObject bindings
+    "gobject-introspection-runtime",
+    # Dependencies that GTK looks for at runtime
+    "libcanberra",
+    # Needed to provide WebKit2 at runtime
+    # "webkit2gtk",
+]
+
+[tool.briefcase.app.tflApp.linux.appimage]
+manylinux = "manylinux_2_28"
+
+system_requires = [
+    # Needed to compile pycairo wheel
+    "cairo-gobject-devel",
+    # Needed to compile PyGObject wheel
+    "gobject-introspection-devel",
+    # Needed to provide GTK
+    "gtk3-devel",
+    # Dependencies that GTK looks for at runtime, that need to be
+    # in the build environment to be picked up by linuxdeploy
+    "libcanberra-gtk3",
+    "PackageKit-gtk3-module",
+    "gvfs-client",
+]
+
+linuxdeploy_plugins = [
+    "DEPLOY_GTK_VERSION=3 gtk",
+]
+
+[tool.briefcase.app.tflApp.linux.flatpak]
+flatpak_runtime = "org.gnome.Platform"
+flatpak_runtime_version = "47"
+flatpak_sdk = "org.gnome.Sdk"
+
+[tool.briefcase.app.tflApp.windows]
+requires = [
+    "toga-winforms~=0.4.7",
+]
+
+# Mobile deployments
+[tool.briefcase.app.tflApp.iOS]
+requires = [
+    "toga-iOS~=0.4.7",
+    "std-nslog~=1.0.3",
+]
+
+[tool.briefcase.app.tflApp.android]
+requires = [
+    "toga-android~=0.4.7",
+]
+
+base_theme = "Theme.MaterialComponents.Light.DarkActionBar"
+
+build_gradle_dependencies = [
+    "com.google.android.material:material:1.12.0",
+    # Needed for DetailedList
+    # "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+    # Needed for MapView
+    # "org.osmdroid:osmdroid-android:6.1.20",
+]
+
+# Web deployments
+[tool.briefcase.app.tflApp.web]
+requires = [
+    "toga-web~=0.4.7",
+]
+style_framework = "Shoelace v2.3"
+
+Briefcase Log:
+[12:03:17]                                                                                                                                                                dev.py:240
+           [tflApp] Installing requirements...                                                                                                                            dev.py:240
+           Installing dev requirements... started                                                                                                                          dev.py:89
+                                                                                                                                                                   subprocess.py:827
+           >>> Running Command:                                                                                                                                    subprocess.py:827
+           >>>     /usr/local/python/3.12.1/bin/python3 -u -X utf8 -m pip install --upgrade 'toga-gtk~=0.4.7' pytest                                               subprocess.py:827
+           >>> Working Directory:                                                                                                                                  subprocess.py:827
+           >>>     /workspaces/tflstuff/tflApp                                                                                                                     subprocess.py:827
+[12:03:18] Collecting toga-gtk~=0.4.7                                                                                                                              subprocess.py:195
+             Using cached toga_gtk-0.4.8-py3-none-any.whl.metadata (3.1 kB)                                                                                        subprocess.py:195
+           Collecting pytest                                                                                                                                       subprocess.py:195
+             Using cached pytest-8.3.3-py3-none-any.whl.metadata (7.5 kB)                                                                                          subprocess.py:195
+           Collecting pycairo>=1.17.0 (from toga-gtk~=0.4.7)                                                                                                       subprocess.py:195
+             Using cached pycairo-1.27.0.tar.gz (661 kB)                                                                                                           subprocess.py:195
+             Installing build dependencies: started                                                                                                                subprocess.py:195
+[12:03:19]   Installing build dependencies: finished with status 'done'                                                                                            subprocess.py:195
+             Getting requirements to build wheel: started                                                                                                          subprocess.py:195
+             Getting requirements to build wheel: finished with status 'done'                                                                                      subprocess.py:195
+             Installing backend dependencies: started                                                                                                              subprocess.py:195
+[12:03:20]   Installing backend dependencies: finished with status 'done'                                                                                          subprocess.py:195
+             Preparing metadata (pyproject.toml): started                                                                                                          subprocess.py:195
+[12:03:22]   Preparing metadata (pyproject.toml): finished with status 'error'                                                                                     subprocess.py:195
+             error: subprocess-exited-with-error                                                                                                                   subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+             × Preparing metadata (pyproject.toml) did not run successfully.                                                                                       subprocess.py:195
+             │ exit code: 1                                                                                                                                        subprocess.py:195
+             ╰─> [56 lines of output]                                                                                                                              subprocess.py:195
+                 + meson setup /tmp/pip-install-cllfqjd9/pycairo_5fdcd641f2934687b4a6bb0d83de89db                                                                  subprocess.py:195
+           /tmp/pip-install-cllfqjd9/pycairo_5fdcd641f2934687b4a6bb0d83de89db/.mesonpy-r61d_edv -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md                              
+           -Dwheel=true -Dtests=false                                                                                                                                               
+           --native-file=/tmp/pip-install-cllfqjd9/pycairo_5fdcd641f2934687b4a6bb0d83de89db/.mesonpy-r61d_edv/meson-python-native-file.ini                                          
+                 The Meson build system                                                                                                                            subprocess.py:195
+                 Version: 1.6.0                                                                                                                                    subprocess.py:195
+                 Source dir: /tmp/pip-install-cllfqjd9/pycairo_5fdcd641f2934687b4a6bb0d83de89db                                                                    subprocess.py:195
+                 Build dir: /tmp/pip-install-cllfqjd9/pycairo_5fdcd641f2934687b4a6bb0d83de89db/.mesonpy-r61d_edv                                                   subprocess.py:195
+                 Build type: native build                                                                                                                          subprocess.py:195
+                 Project name: pycairo                                                                                                                             subprocess.py:195
+                 Project version: 1.27.0                                                                                                                           subprocess.py:195
+                 C compiler for the host machine: cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0")                                                        subprocess.py:195
+                 C linker for the host machine: cc ld.bfd 2.34                                                                                                     subprocess.py:195
+                 Host machine cpu family: x86_64                                                                                                                   subprocess.py:195
+                 Host machine cpu: x86_64                                                                                                                          subprocess.py:195
+                 Program python3 found: YES (/usr/local/python/3.12.1/bin/python3)                                                                                 subprocess.py:195
+                 Compiler for C supports arguments -Wall: YES                                                                                                      subprocess.py:195
+                 Compiler for C supports arguments -Warray-bounds: YES                                                                                             subprocess.py:195
+                 Compiler for C supports arguments -Wcast-align: YES                                                                                               subprocess.py:195
+                 Compiler for C supports arguments -Wconversion: YES                                                                                               subprocess.py:195
+                 Compiler for C supports arguments -Wextra: YES                                                                                                    subprocess.py:195
+                 Compiler for C supports arguments -Wformat=2: YES                                                                                                 subprocess.py:195
+                 Compiler for C supports arguments -Wformat-nonliteral: YES                                                                                        subprocess.py:195
+                 Compiler for C supports arguments -Wformat-security: YES                                                                                          subprocess.py:195
+                 Compiler for C supports arguments -Wimplicit-function-declaration: YES                                                                            subprocess.py:195
+                 Compiler for C supports arguments -Winit-self: YES                                                                                                subprocess.py:195
+                 Compiler for C supports arguments -Winline: YES                                                                                                   subprocess.py:195
+                 Compiler for C supports arguments -Wmissing-format-attribute: YES                                                                                 subprocess.py:195
+                 Compiler for C supports arguments -Wmissing-noreturn: YES                                                                                         subprocess.py:195
+                 Compiler for C supports arguments -Wnested-externs: YES                                                                                           subprocess.py:195
+                 Compiler for C supports arguments -Wold-style-definition: YES                                                                                     subprocess.py:195
+                 Compiler for C supports arguments -Wpacked: YES                                                                                                   subprocess.py:195
+                 Compiler for C supports arguments -Wpointer-arith: YES                                                                                            subprocess.py:195
+                 Compiler for C supports arguments -Wreturn-type: YES                                                                                              subprocess.py:195
+                 Compiler for C supports arguments -Wshadow: YES                                                                                                   subprocess.py:195
+                 Compiler for C supports arguments -Wsign-compare: YES                                                                                             subprocess.py:195
+                 Compiler for C supports arguments -Wstrict-aliasing: YES                                                                                          subprocess.py:195
+                 Compiler for C supports arguments -Wundef: YES                                                                                                    subprocess.py:195
+                 Compiler for C supports arguments -Wunused-but-set-variable: YES                                                                                  subprocess.py:195
+                 Compiler for C supports arguments -Wswitch-default: YES                                                                                           subprocess.py:195
+                 Compiler for C supports arguments -Wno-missing-field-initializers: YES                                                                            subprocess.py:195
+                 Compiler for C supports arguments -Wno-unused-parameter: YES                                                                                      subprocess.py:195
+                 Compiler for C supports arguments -fno-strict-aliasing: YES                                                                                       subprocess.py:195
+                 Compiler for C supports arguments -fvisibility=hidden: YES                                                                                        subprocess.py:195
+                 Found pkg-config: YES (/usr/bin/pkg-config) 0.29.1                                                                                                subprocess.py:195
+                 Found CMake: /usr/bin/cmake (3.16.3)                                                                                                              subprocess.py:195
+                 DEPRECATION: CMake support for versions <3.17 is deprecated since Meson 0.62.0.                                                                   subprocess.py:195
+                 |                                                                                                                                                 subprocess.py:195
+                 |   However, Meson was only able to find CMake 3.16.3.                                                                                            subprocess.py:195
+                 |                                                                                                                                                 subprocess.py:195
+                 |   Support for all CMake versions below 3.17.0 will be removed once                                                                              subprocess.py:195
+                 |   newer CMake versions are more widely adopted. If you encounter                                                                                subprocess.py:195
+                 |   any errors please try upgrading CMake to a newer version first.                                                                               subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+                 Run-time dependency cairo found: NO (tried pkgconfig and cmake)                                                                                   subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+                 ../cairo/meson.build:31:12: ERROR: Dependency "cairo" not found, tried pkgconfig and cmake                                                        subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+                 A full log can be found at /tmp/pip-install-cllfqjd9/pycairo_5fdcd641f2934687b4a6bb0d83de89db/.mesonpy-r61d_edv/meson-logs/meson-log.txt          subprocess.py:195
+                 [end of output]                                                                                                                                   subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+             note: This error originates from a subprocess, and is likely not a problem with pip.                                                                  subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+           [notice] A new release of pip is available: 24.2 -> 24.3.1                                                                                              subprocess.py:195
+           [notice] To update, run: python3 -m pip install --upgrade pip                                                                                           subprocess.py:195
+           error: metadata-generation-failed                                                                                                                       subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+           × Encountered error while generating package metadata.                                                                                                  subprocess.py:195
+           ╰─> See above for output.                                                                                                                               subprocess.py:195
+                                                                                                                                                                   subprocess.py:195
+           note: This is an issue with the package mentioned above, not pip.                                                                                       subprocess.py:195
+           hint: See above for details.                                                                                                                            subprocess.py:195
+           >>> Return code: 1                                                                                                                                      subprocess.py:827
+           Installing dev requirements... errored                                                                                                                          dev.py:89
+                                                                                                                                                                      __main__.py:44
+           Unable to install requirements. This may be because one of your                                                                                            __main__.py:45
+           requirements is invalid, or because pip was unable to connect                                                                                              __main__.py:45
+           to the PyPI server.                                                                                                                                        __main__.py:45
+           Saving log... started                                                                                                                                      console.py:391
+
+Main thread traceback:
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /usr/local/python/3.12.1/lib/python3.12/site-packages/briefcase/commands/dev.py:91 in install_dev_requirements                                                                   │
+│                                                                                                                                                                                  │
+│    88 │   │   if requires:                                                                     ╭──────────────────────────────── locals ─────────────────────────────────╮       │
+│    89 │   │   │   with self.input.wait_bar("Installing dev requirements..."):                  │      app = <com.tflnea.tflApp v0.0.1 AppConfig>                         │       │
+│    90 │   │   │   │   try:                                                                     │  options = {}                                                           │       │
+│ ❱  91 │   │   │   │   │   self.tools.subprocess.run(                                           │ requires = ['toga-gtk~=0.4.7', 'pytest']                                │       │
+│    92 │   │   │   │   │   │   [                                                                │     self = <briefcase.commands.dev.DevCommand object at 0x7575f7da4170> │       │
+│    93 │   │   │   │   │   │   │   sys.executable,                                              ╰─────────────────────────────────────────────────────────────────────────╯       │
+│    94 │   │   │   │   │   │   │   "-u",                                                                                                                                          │
+│                                                                                                                                                                                  │
+│ /usr/local/python/3.12.1/lib/python3.12/site-packages/briefcase/integrations/subprocess.py:144 in inner                                                                          │
+│                                                                                                                                                                                  │
+│   141 │   │   │   with sub.tools.input.release_console_control():                                                                                                                │
+│   142 │   │   │   │   return sub_method(sub, args, *wrapped_args, **wrapped_kwargs)                                                                                              │
+│   143 │   │   else:                                                                                                                                                              │
+│ ❱ 144 │   │   │   return sub_method(sub, args, *wrapped_args, **wrapped_kwargs)                                                                                                  │
+│   145 │                                                                                                                                                                          │
+│   146 │   return inner                                                                                                                                                           │
+│   147                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────────────────────╮                     │
+│ │                    args = ['/usr/local/python/3.12.1/bin/python3', '-u', '-X', 'utf8', '-m', 'pip', 'install', '--upgrade', 'toga-gtk~=0.4.7', 'pytest'] │                     │
+│ │ remove_dynamic_elements = False                                                                                                                          │                     │
+│ │                     sub = <briefcase.integrations.subprocess.Subprocess object at 0x7575f7da7d40>                                                        │                     │
+│ │            wrapped_args = ()                                                                                                                             │                     │
+│ │          wrapped_kwargs = {'check': True, 'encoding': 'UTF-8'}                                                                                           │                     │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                     │
+│                                                                                                                                                                                  │
+│ /usr/local/python/3.12.1/lib/python3.12/site-packages/briefcase/integrations/subprocess.py:539 in run                                                                            │
+│                                                                                                                                                                                  │
+│   536 │   │   # caller sets stream_output=False, then ensure_console_is_safe() will                                                                                              │
+│   537 │   │   # disable any dynamic console elements while the command runs.                                                                                                     │
+│   538 │   │   if stream_output:                                                                                                                                                  │
+│ ❱ 539 │   │   │   return self._run_and_stream_output(args, filter_func=filter_func, **kwargs)                                                                                    │
+│   540 │   │                                                                                                                                                                      │
+│   541 │   │   # Can't filter non-streamed output.                                                                                                                                │
+│   542 │   │   if filter_func:                                                                                                                                                    │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────╮                               │
+│ │          args = ['/usr/local/python/3.12.1/bin/python3', '-u', '-X', 'utf8', '-m', 'pip', 'install', '--upgrade', 'toga-gtk~=0.4.7', 'pytest'] │                               │
+│ │   filter_func = None                                                                                                                           │                               │
+│ │        kwargs = {'check': True, 'encoding': 'UTF-8'}                                                                                           │                               │
+│ │          self = <briefcase.integrations.subprocess.Subprocess object at 0x7575f7da7d40>                                                        │                               │
+│ │ stream_output = True                                                                                                                           │                               │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                               │
+│                                                                                                                                                                                  │
+│ /usr/local/python/3.12.1/lib/python3.12/site-packages/briefcase/integrations/subprocess.py:615 in _run_and_stream_output                                                         │
+│                                                                                                                                                                                  │
+│   612 │   │   self._log_return_code(return_code)                                                                                                                                 │
+│   613 │   │                                                                                                                                                                      │
+│   614 │   │   if check and return_code:                                                                                                                                          │
+│ ❱ 615 │   │   │   raise subprocess.CalledProcessError(return_code, args, stderr=stderr)                                                                                          │
+│   616 │   │                                                                                                                                                                      │
+│   617 │   │   return subprocess.CompletedProcess(args, return_code, stderr=stderr)                                                                                               │
+│   618                                                                                                                                                                            │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────╮                                 │
+│ │        args = ['/usr/local/python/3.12.1/bin/python3', '-u', '-X', 'utf8', '-m', 'pip', 'install', '--upgrade', 'toga-gtk~=0.4.7', 'pytest'] │                                 │
+│ │       check = True                                                                                                                           │                                 │
+│ │ filter_func = None                                                                                                                           │                                 │
+│ │      kwargs = {'encoding': 'UTF-8', 'stdout': -1, 'stderr': -2, 'bufsize': 1}                                                                │                                 │
+│ │     process = <Popen: returncode: 1 args: ['/usr/local/python/3.12.1/bin/python3', '-u', '...>                                               │                                 │
+│ │ return_code = 1                                                                                                                              │                                 │
+│ │        self = <briefcase.integrations.subprocess.Subprocess object at 0x7575f7da7d40>                                                        │                                 │
+│ │      stderr = None                                                                                                                           │                                 │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                 │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+CalledProcessError: Command '['/usr/local/python/3.12.1/bin/python3', '-u', '-X', 'utf8', '-m', 'pip', 'install', '--upgrade', 'toga-gtk~=0.4.7', 'pytest']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /usr/local/python/3.12.1/lib/python3.12/site-packages/briefcase/__main__.py:29 in main                                                                                           │
+│                                                                                                                                                                                  │
+│   26 │   │   │   Path.cwd() / "pyproject.toml",                                                                                                                                  │
+│   27 │   │   │   overrides=overrides,                                                                                                                                            │
+│   28 │   │   )                                                                                                                                                                   │
+│ ❱ 29 │   │   command(**options)                                                                                                                                                  │
+│   30 │   except HelpText as e:                                                                                                                                                   │
+│   31 │   │   logger.info()                                                                                                                                                       │
+│   32 │   │   logger.info(str(e))                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────╮                                                      │
+│ │       command = <briefcase.commands.dev.DevCommand object at 0x7575f7da4170>                                            │                                                      │
+│ │       console = <briefcase.console.Console object at 0x7575f9727b00>                                                    │                                                      │
+│ │             e = RequirementsInstallError()                                                                              │                                                      │
+│ │ extra_cmdline = []                                                                                                      │                                                      │
+│ │        logger = <briefcase.console.Log object at 0x7575f9727ad0>                                                        │                                                      │
+│ │       options = {'appname': None, 'update_requirements': False, 'run_app': True, 'test_mode': False, 'passthrough': []} │                                                      │
+│ │     overrides = {}                                                                                                      │                                                      │
+│ │       printer = <briefcase.console.Printer object at 0x7575f7f94a10>                                                    │                                                      │
+│ │        result = 200                                                                                                     │                                                      │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                      │
+│                                                                                                                                                                                  │
+│ /usr/local/python/3.12.1/lib/python3.12/site-packages/briefcase/commands/dev.py:241 in __call__                                                                                  │
+│                                                                                                                                                                                  │
+│   238 │   │   │   update_requirements = True                                                                                                                                     │
+│   239 │   │   if update_requirements or not dist_info_path.exists():                                                                                                             │
+│   240 │   │   │   self.logger.info("Installing requirements...", prefix=app.app_name)                                                                                            │
+│ ❱ 241 │   │   │   self.install_dev_requirements(app, **options)                                                                                                                  │
+│   242 │   │   │   write_dist_info(app, dist_info_path)                                                                                                                           │
+│   243 │   │                                                                                                                                                                      │
+│   244 │   │   if run_app:                                                                                                                                                        │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────── locals ───────────────────────────────────────╮                                                                                          │
+│ │                 app = <com.tflnea.tflApp v0.0.1 AppConfig>                          │                                                                                          │
+│ │             appname = None                                                          │                                                                                          │
+│ │      dist_info_path = PosixPath('/workspaces/tflstuff/tflApp/src/tflApp.dist-info') │                                                                                          │
+│ │             options = {}                                                            │                                                                                          │
+│ │         passthrough = []                                                            │                                                                                          │
+│ │             run_app = True                                                          │                                                                                          │
+│ │                self = <briefcase.commands.dev.DevCommand object at 0x7575f7da4170>  │                                                                                          │
+│ │           test_mode = False                                                         │                                                                                          │
+│ │ update_requirements = False                                                         │                                                                                          │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────╯                                                                                          │
+│                                                                                                                                                                                  │
+│ /usr/local/python/3.12.1/lib/python3.12/site-packages/briefcase/commands/dev.py:108 in install_dev_requirements                                                                  │
+│                                                                                                                                                                                  │
+│   105 │   │   │   │   │   │   encoding="UTF-8",                                                ╭──────────────────────────────── locals ─────────────────────────────────╮       │
+│   106 │   │   │   │   │   )                                                                    │      app = <com.tflnea.tflApp v0.0.1 AppConfig>                         │       │
+│   107 │   │   │   │   except subprocess.CalledProcessError as e:                               │  options = {}                                                           │       │
+│ ❱ 108 │   │   │   │   │   raise RequirementsInstallError() from e                              │ requires = ['toga-gtk~=0.4.7', 'pytest']                                │       │
+│   109 │   │   else:                                                                            │     self = <briefcase.commands.dev.DevCommand object at 0x7575f7da4170> │       │
+│   110 │   │   │   self.logger.info("No application requirements.")                             ╰─────────────────────────────────────────────────────────────────────────╯       │
+│   111                                                                                                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+RequirementsInstallError: Unable to install requirements. This may be because one of your
+requirements is invalid, or because pip was unable to connect
+to the PyPI server.
+
