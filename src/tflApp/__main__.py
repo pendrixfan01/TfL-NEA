@@ -8,6 +8,12 @@ from datetime import datetime
 appID = "746fe72b81db46b9a64a58cabca3a7d0"
 appKey = "f1a094883568409b97ec3ada3c70d06f"
 
+
+hammersmithDouble = ['HAMMERSMITH (DIST&PICC LINE)', 'HAMMERSMITH (H&C LINE)']
+edgwareRoadDouble = ['EDGWARE ROAD (BAKERLOO)', 'EDGWARE ROAD (CIRCLE LINE)']
+paddingtonDouble = ['PADDINGTON (DIST&BAKERLOO)', 'PADINGTON (H&C LINE)']
+
+
 params = {
     "app_id": appID,
     "app_key": appKey,
@@ -146,7 +152,7 @@ def displayLineDisruptions(status, lineType):
 
 
 def getStationIDinFiles(stationName, mode):
-    filePath = f'tflApp/src/tflApp/resources/{mode}IDLookup.txt'
+    filePath = f'src/tflApp/resources/{mode}IDLookup.txt'
     with open(filePath, 'r') as lookupFile:
          for line in lookupFile:
                 parts = line.strip()
@@ -158,7 +164,7 @@ def getStationIDinFiles(stationName, mode):
                     return naptanID.strip()
 
 def getStationArrivals(stationName, mode):
-    stationID = getStationID(stationName, mode)
+    stationID = getStationIDinFiles(stationName, mode)
     
     url = f"https://api.tfl.gov.uk/StopPoint/{stationID}/Arrivals"
     response = apiRequest(url)
@@ -199,29 +205,25 @@ def displayStationArrivals(arrivalsByplatform):
                 arrivalTime = prediction['timeToPlatform']
                 print(f'{lineName} Line to {destination} {arrivalTime}min\n')
 
-hammersmithDouble = ['HAMMERSMITH (DIST&PICC LINE)', 'HAMMERSMITH (H&C LINE)']
-edgwareRoadDouble = ['EDGWARE ROAD (BAKERLOO)', 'EDGWARE ROAD (CIRCLE LINE)']
-paddingtonDouble = ['PADDINGTON (DIST&BAKERLOO)', 'PADINGTON (H&C LINE)']
 
-# station = input().upper()
-# match station:
-#     case 'HAMMERSMITH':
-#         for hammersmithStation in hammersmithDouble:
-#             getStationArrivals(hammersmithStation, 'tube')
+station = input().upper()
+match station:
+    case 'HAMMERSMITH':
+        for hammersmithStation in hammersmithDouble:
+            getStationArrivals(hammersmithStation, 'tube')
     
-#     case 'EDGWARE ROAD':
-#         for edgwareRoadStation in edgwareRoadDouble:
-#             getStationArrivals(edgwareRoadStation, 'tube')
+    case 'EDGWARE ROAD':
+        for edgwareRoadStation in edgwareRoadDouble:
+            getStationArrivals(edgwareRoadStation, 'tube')
 
-#     case 'PADDINGTON':
-#         for paddingtonStation in paddingtonDouble:
-#             getStationArrivals(paddingtonStation, 'tube')
+    case 'PADDINGTON':
+        for paddingtonStation in paddingtonDouble:
+            getStationArrivals(paddingtonStation, 'tube')
 
-#     case _:
-#         mode = input()
-#         getStationArrivals(station, mode)
+    case _:
+        mode = input()
+        getStationArrivals(station, mode)
 
-plan = journeyPlanner("wembley park", "holland park")
-displayJourneyPlan(plan)
+
 
 
