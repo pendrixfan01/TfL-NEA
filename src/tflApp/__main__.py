@@ -3,7 +3,6 @@ import json
 import folium
 import time
 from datetime import datetime
-# import customtkinter as tkt
 
 appID = "746fe72b81db46b9a64a58cabca3a7d0"
 appKey = "f1a094883568409b97ec3ada3c70d06f"
@@ -159,7 +158,7 @@ def getStationIDinFiles(stationName, mode):
                 parts = parts.split(':')
                 name, naptanID = parts
 
-                if name.strip() == stationName:
+                if name.strip() == stationName.upper():
                     print(naptanID.strip())
                     return naptanID.strip()
 
@@ -176,7 +175,7 @@ def getStationArrivals(stationName, mode):
     for arrival in arrivalInfo:
         platformName = arrival['platformName']
         lineName = arrival['lineName']
-        destination = arrival['towards']
+        destination = arrival['destinationName']
         timeToPlatform = arrival['timeToStation'] / 60 #convert seconds to minutes
         timeToPlatform = round(timeToPlatform)
 
@@ -206,24 +205,24 @@ def displayStationArrivals(arrivalsByplatform):
                 print(f'{lineName} Line to {destination} {arrivalTime}min\n')
 
 
-station = input().upper()
-match station:
-    case 'HAMMERSMITH':
-        for hammersmithStation in hammersmithDouble:
-            getStationArrivals(hammersmithStation, 'tube')
+# station = input().upper()
+# match station:
+#     case 'HAMMERSMITH':
+#         for hammersmithStation in hammersmithDouble:
+#             getStationArrivals(hammersmithStation, 'tube')
     
-    case 'EDGWARE ROAD':
-        for edgwareRoadStation in edgwareRoadDouble:
-            getStationArrivals(edgwareRoadStation, 'tube')
+#     case 'EDGWARE ROAD':
+#         for edgwareRoadStation in edgwareRoadDouble:
+#             getStationArrivals(edgwareRoadStation, 'tube')
 
-    case 'PADDINGTON':
-        for paddingtonStation in paddingtonDouble:
-            getStationArrivals(paddingtonStation, 'tube')
+#     case 'PADDINGTON':
+#         for paddingtonStation in paddingtonDouble:
+#             getStationArrivals(paddingtonStation, 'tube')
 
-    case _:
-        mode = input()
-        getStationArrivals(station, mode)
+#     case _:
+#         mode = input()
+#         getStationArrivals(station, mode)
 
-
+getStationArrivals('bank', 'tube')
 
 
