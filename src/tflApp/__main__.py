@@ -4,8 +4,9 @@ import folium
 import time
 from datetime import datetime
 
-appID = "746fe72b81db46b9a64a58cabca3a7d0"
+appID = "ap746fe72b81db46b9a64a58cabca3a7d0"
 appKey = "f1a094883568409b97ec3ada3c70d06f"
+
 
 
 hammersmithDouble = ['HAMMERSMITH (DIST&PICC LINE)', 'HAMMERSMITH (H&C LINE)']
@@ -24,10 +25,10 @@ def apiRequest(url):
 
 
 def journeyPlanner(startLocation, endLocation):
-    startLocation = getStationID(startLocation)
-    endLocation = getStationID(endLocation)
+    startLocation = getStationIDinFiles(startLocation, 'tube')
+    endLocation = getStationIDinFiles(endLocation, 'tube')
 
-    url = f"https://api.tfl.gov.uk/Journey/JourneyResults/{"51.688676, 0.072355"}/to/{"51.503966,-0.2142082"}"
+    url = f"https://api.tfl.gov.uk/Journey/JourneyResults/{startLocation}/to/{endLocation}"
     
 
 
@@ -222,7 +223,3 @@ def displayStationArrivals(arrivalsByplatform):
 #     case _:
 #         mode = input()
 #         getStationArrivals(station, mode)
-
-getStationArrivals('bank', 'tube')
-
-
