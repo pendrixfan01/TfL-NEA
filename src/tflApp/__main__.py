@@ -1,12 +1,14 @@
 import requests
-import json
 import folium
-import time
 from datetime import datetime
+from dotenv import load_dotenv
+import os
 
-appID = "ap746fe72b81db46b9a64a58cabca3a7d0"
-appKey = "f1a094883568409b97ec3ada3c70d06f"
+load_dotenv()
 
+
+appID= os.getenv("appID")
+appKey= os.getenv("appKey")
 
 
 hammersmithDouble = ['HAMMERSMITH (DIST&PICC LINE)', 'HAMMERSMITH (H&C LINE)']
@@ -21,9 +23,10 @@ params = {
 
 def apiRequest(url):
         response = requests.get(url, params=params)
+        print(response)
         return response
 
-
+apiRequest('https://api.tfl.gov.uk/Line/piccadilly/Status')
 def journeyPlanner(startLocation, endLocation):
     startLocation = getStationIDinFiles(startLocation, 'tube')
     endLocation = getStationIDinFiles(endLocation, 'tube')
@@ -70,22 +73,6 @@ def displayJourneyPlan(journeyData):
             print(f"Arrival time: {arrivalTime}")
             
 
-def getStationID(stationName):
-    url = f"https://api.tfl.gov.uk/StopPoint/Search/{stationName}"
-
-    response = apiRequest(url)
-    
-    if response.status_code == 200:
-        data = response.json()
-        for stopPoint in data["matches"]:
-            naptanID = stopPoint.get("id")
-            # stationName = stopPoint.get("name")
-            return naptanID
-    else:
-        print(f"Error: {response.status_code}")
-        return None 
-
-
 def getModeDisruptions(mode):
     url = f"https://api.tfl.gov.uk/Line/Mode/{mode}/Status"
     response = apiRequest(url)
@@ -122,9 +109,9 @@ def displayModeDisruptions(disruptions, mode):
                 disCheck = True
             
             elif disCheck == False:
-                print(f"No current disruptions on the {mode}.")
+                pass
 
- 
+
 def getLineDisruptions(lineType):
         url = f"https://api.tfl.gov.uk/Line/{lineType}/Status"
         response = apiRequest(url)
@@ -134,6 +121,10 @@ def getLineDisruptions(lineType):
         else:           
             print(f"Unable to retrieve response: status code {response.status_code}")
 
+args = getLineDisruptions('victoria')
+status = args[0]
+lineType = args[1]
+displayModeDisruptions(disruptions=status, mode=lineType)
 
 def displayLineDisruptions(status, lineType):
     disruptionDescription = 81208
@@ -144,12 +135,12 @@ def displayLineDisruptions(status, lineType):
 
                 if disruptionDescription != disruption.get("reason"):
                     disruptionDescription = disruption.get("reason")
+                    print(disruptionDescription)
                     if disruptionDescription is not None:
                         print(disruptionDescription)
 
                     else:
                         print(f'Good Service on the {lineType} Line.')
-
 
 def getStationIDinFiles(stationName, mode):
     filePath = f'src/tflApp/resources/{mode}IDLookup.txt'
@@ -205,8 +196,7 @@ def displayStationArrivals(arrivalsByplatform):
                 arrivalTime = prediction['timeToPlatform']
                 print(f'{lineName} Line to {destination} {arrivalTime}min\n')
 
-
-# station = input().upper()
+#station = input().upper()
 # match station:
 #     case 'HAMMERSMITH':
 #         for hammersmithStation in hammersmithDouble:
@@ -223,3 +213,4 @@ def displayStationArrivals(arrivalsByplatform):
 #     case _:
 #         mode = input()
 #         getStationArrivals(station, mode)
+
